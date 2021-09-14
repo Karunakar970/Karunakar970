@@ -8,20 +8,27 @@ public class PalindromeNumber {
 		
 		
 		@SuppressWarnings("resource")
-		Scanner sc = new Scanner (System.in);
-		
-		System.out.println("this is a palindrome number");
-	int	num = sc.nextInt();
+ 
 
-	//by using StringBuilder class
-	  StringBuilder sbl=new StringBuilder();
-
-		sbl.append(num);
-		StringBuilder rev =sbl.reverse();
-
-
-		System.out.println("the palindrome value is>>>"+rev);  
-
+	
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the value...: ");
+			int n=sc.nextInt();
+			int temp=n;
+			int rev=0;
+				while(n>0)
+			{
+				rev=rev*10+n%10;
+				n=n/10;
+			}
+			if(temp==rev)
+			{
+				System.out.println(temp+"is a Pallindrome Number....!!");
+			}
+			else
+			{
+				System.out.println(temp+"is not a Pallindrome Number...!!");
+			}
 	 
 	}
 
