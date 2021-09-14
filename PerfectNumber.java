@@ -5,17 +5,17 @@ public class PerfectNumber
 //28--> 1+2+4+7+14=28
    public  static void main(String args[]) 
 {
-	int n=6;
-	int sum=0;
-	for(int i=1;i<n;i++) 
-	{
-	if(n%i==0);	
-	sum=sum+i;
-	}
-	if(n==sum)
-		System.out.println("its a prfectNumber");
-else
-	System.out.println("its not a perfect number");
+	   int n=6;
+		int sum=0;
+		for(int i=1;i<n;i++)
+		{
+			if(n%i==0)
+				sum += i;
+		}
+		if(n==sum)
+			System.out.println("Its a  Perfect Number");
+		else
+			System.out.println(" Its not a Perfect Number");
 		}
 	}
    
