@@ -1,6 +1,4 @@
-//Natural Number>1
-//which has only two factors 1 and itself
-//19=>1 and 19=>Prime number 
+ 
  
 
 public class PrimeNumber {
